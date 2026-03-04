@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta name="google-site-verification" content="BQj8t2TI1qrN7sbOJ-MweGBmTAs6fSymZlA7fd-aeOI" />
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="google-site-verification" content="BQj8t2TI1qrN7sbOJ-MweGBmTAs6fSymZlA7fd-aeOI" />
     <title>Global Web Tool | Pro Image Converter & Color Picker</title>
     <meta name="description" content="Free professional tools: WebP converter, Image color picker, and unit converter. Safe, fast, and 100% private.">
     
@@ -21,7 +22,7 @@
         .tools-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
         .tool-card { background: var(--card); border: 1px solid #334155; border-radius: 16px; padding: 25px; transition: 0.3s; position: relative; }
         .drop-zone { border: 2px dashed var(--primary); padding: 30px; text-align: center; border-radius: 12px; background: rgba(99, 102, 241, 0.05); cursor: pointer; margin-top: 15px; }
-        .ad-container { margin: 30px 0; text-align: center; min-height: 100px; display: flex; justify-content: center; overflow: hidden; }
+        .ad-container { margin: 30px 0; text-align: center; min-height: 100px; display: flex; flex-direction: column; align-items: center; justify-content: center; overflow: hidden; border: 1px solid rgba(255,255,255,0.05); border-radius: 12px; }
         input, select, button { width: 100%; padding: 12px; margin-top: 15px; border-radius: 8px; border: 1px solid #475569; background: #0f172a; color: white; }
         .btn-convert { background: var(--primary); border: none; font-weight: 600; cursor: pointer; }
         .result-area { margin-top: 15px; padding: 10px; background: #0f172a; border-radius: 8px; display: none; color: var(--accent); font-weight: bold; text-align: center; }
@@ -80,8 +81,9 @@
     </div>
 
     <div class="ad-container">
-        <div id="container-6176d6409e3673252f81c5cbb95ba586"></div>
-    </div>
+        <p style="font-size: 0.7rem; color: #475569; margin-bottom: 5px;">ADVERTISEMENT</p>
+        <div id="container-6176d6409e3673252f81c5cbb95ba586-bottom"></div>
+        </div>
 </div>
 
 <footer>&copy; 2026 Global Web Toolbox | Privacy-Focused Utilities</footer>
@@ -146,7 +148,7 @@
         r.style.display = "block";
     }
 
-    // Translation
+    // Translation Logic
     if (navigator.language.startsWith('ar')) {
         document.getElementById('mainTitle').innerText = "مركز الأدوات الرقمي العالمي";
         document.getElementById('subTitle').innerText = "أدوات احترافية للمصممين والمطورين حول العالم";
